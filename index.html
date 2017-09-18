@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<style>
+		.mycolor {background-color: #000; color: #fff;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron mycolor">
+				<h1>Anytime is Train Time</h1>
+				<p>Choo Choo. Chee Chee.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Train Schedule</h3>
+				</div>
+				<div class="panel-body">
+					<table class="table table-table-hover" id="train-table">
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Train</h3>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group">
+							<label for="train">Train Name</label>
+							<input type="text" class="form-control" id="train">
+						</div>
+						<div class="form-group">
+							<label for="destination">Destination</label>
+							<input type="text" class="form-control" id="destination">
+						</div>
+						<div class="form-group">
+							<label for="time">First Train Time (HH:mm - 24hour time)</label>
+							<input type="text" class="form-control" id="time">
+						</div>
+						<div class="form-group">
+							<label for="frequency">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequency">
+						</div>
+						<div class="form-group">
+							<input type="button" class="btn btn-primary" id="submit-data" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/train.js"></script>
+</body>
+</html>
