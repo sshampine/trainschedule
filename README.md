@@ -6,7 +6,7 @@ The challenge was to create a train scheduler that accepted various data from th
 ## Technologies Used
 * Bootstrap
 * Firebase
-* Momenet.js
+* Moment.js
 * JQuery
 
 ## Built With
