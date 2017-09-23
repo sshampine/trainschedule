@@ -44,7 +44,7 @@ $("#submit-data").on("click", function(event) {
 //Establishes connection to database
 database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
-
+	//Gets child snapshots from firebase and assigns to variables
 	var trainName = childSnapshot.val().name;
 	var trainDestination = childSnapshot.val().destination;
 	var trainFrequency = childSnapshot.val().frequency;
