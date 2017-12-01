@@ -5,6 +5,10 @@ The challenge was to create a train scheduler that accepts schedule data from th
 
 Relevent data is outputted as a table in the Current Train Schedule section. Current Train Schedule is also updated for new site visitors.
 
+### Link to site
+
+[Train Scheduler](https://sshampine.github.io/trainschedule/)
+
 ### Screenshot
 
 ![picture alt](https://github.com/sshampine/trainschedule/blob/master/assets/images/main.jpg "Screenshot of Train Scheduler")
